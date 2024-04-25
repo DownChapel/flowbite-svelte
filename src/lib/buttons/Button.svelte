@@ -123,7 +123,7 @@
     <slot />
   </a>
 {:else if tag === 'button'}
-  <button {type} {...$$restProps} class={buttonClass} on:click on:change on:keydown on:keyup on:touchstart|passive on:touchend on:touchcancel on:mouseenter on:mouseleave>
+  <button {type} {...$$restProps} class={buttonClass} {disabled} on:click on:change on:keydown on:keyup on:touchstart|passive on:touchend on:touchcancel on:mouseenter on:mouseleave>
     <slot />
   </button>
 {:else}
